@@ -1,0 +1,17 @@
+# QAIVRA — least-privilege Tauri capability for the main window.
+#
+# Tauri v2 applies an IMPLICIT default capability (granting shell/process/fs/
+# opener to the webview) when no capability file exists. This file replaces that
+# default with an explicit, minimal grant.
+#
+# The asset protocol used by `convertFileSrc` (image thumbnails) is enabled via
+# tauri.conf.json `app.security`, NOT via capability grants, so thumbnails remain
+# functional without granting broad filesystem access.
+identifier = "main"
+description = "Least-privilege capabilities for the QAIVRA main window."
+windows = ["main"]
+permissions = [
+  "core:default",
+  "dialog:default",
+  "dialog:allow-open",
+]

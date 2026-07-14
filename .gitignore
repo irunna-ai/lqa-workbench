@@ -1,0 +1,57 @@
+# Rust / Tauri
+src-tauri/target/
+src-tauri/gen/
+
+# Node / frontend
+node_modules/
+yarn.lock
+pnpm-lock.yaml
+dist/
+.vite/
+
+# Python sidecar
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.egg-info/
+
+# SQLite / local data
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+projects/
+app_data/
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temp
+*.tmp
+temp/
+tmp/
+
+# Binaries and installers
+*.exe
+*.msi
+*.msix
+*.appx
+
+# Build check output files
+cargo_check_*.txt
+cargo_test_*.txt
+cargo_bg_*.txt
